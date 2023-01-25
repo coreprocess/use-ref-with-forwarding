@@ -1,21 +1,29 @@
-import { MutableRefObject, RefCallback, useMemo, useRef } from "react";
+import { useMemo, useRef } from "react";
 
 // hook to forward a ref to multiple refs
 export function useRefWithForwarding<Value>(
-    initialValue: Value | null,
-    refs: (RefCallback<Value> | MutableRefObject<Value | null>)[]
+    initialValue: Value,
+    refs: (
+        | ((value: Value) => void)
+        | {
+              readonly current: Value;
+          }
+        | {
+              current: Value;
+          }
+    )[]
 ): {
-    (node: Value | null): void;
-    current: Value | null;
+    (node: Value): void;
+    current: Value;
 } {
     // inner reference needed to initialize the current value on the setter function
-    const innerRef = useRef<Value | null>(initialValue);
+    const innerRef = useRef<Value>(initialValue);
 
     // generate the setter function
     return useMemo(
         () => {
             // the actual forwarding setter function
-            function setRef(node: Value | null) {
+            function setRef(node: Value) {
                 // update inner reference and value on the setter function
                 setRef.current = innerRef.current = node;
 
@@ -24,7 +32,11 @@ export function useRefWithForwarding<Value>(
                     if (typeof ref === "function") {
                         ref(node);
                     } else if (ref) {
-                        ref.current = node;
+                        (
+                            ref as {
+                                current: Value;
+                            }
+                        ).current = node;
                     }
                 }
             }
