@@ -1,0 +1,26 @@
+{
+    "name": "use-ref-with-forwarding",
+    "version": "1.0.0",
+    "description": "useRefWithForwarding hook for React",
+    "main": "dist/index.js",
+    "repository": "https://github.com/teamrevin/use-ref-with-forwarding",
+    "author": "Niklas Salmoukas",
+    "license": "MIT",
+    "private": false,
+    "scripts": {
+        "build": "tsc"
+    },
+    "devDependencies": {
+        "@types/react": ">=18.0.27",
+        "@typescript-eslint/eslint-plugin": "^5.49.0",
+        "@typescript-eslint/parser": "^5.49.0",
+        "eslint-plugin-react-hooks": "^4.6.0",
+        "eslint-plugin-react": "^7.32.1",
+        "eslint": "^8.32.0",
+        "prettier": "^2.8.3",
+        "typescript": "^4.9.4"
+    },
+    "peerDependencies": {
+        "react": ">=18.2.0"
+    }
+}
