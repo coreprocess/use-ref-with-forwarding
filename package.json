@@ -3,6 +3,8 @@
     "version": "1.0.0",
     "description": "useRefWithForwarding hook for React",
     "main": "dist/index.js",
+    "module": "dist/index.js",
+    "types": "dist/index.d.ts",
     "repository": "https://github.com/teamrevin/use-ref-with-forwarding",
     "author": "Niklas Salmoukas",
     "license": "MIT",
@@ -22,5 +24,8 @@
     },
     "peerDependencies": {
         "react": ">=18.2.0"
-    }
+    },
+    "files": [
+        "/dist"
+    ]
 }
