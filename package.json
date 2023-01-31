@@ -1,6 +1,6 @@
 {
     "name": "use-ref-with-forwarding",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "useRefWithForwarding hook for React",
     "main": "dist/index.js",
     "module": "dist/index.js",

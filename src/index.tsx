@@ -11,6 +11,8 @@ export function useRefWithForwarding<Value>(
         | {
               current: Value;
           }
+        | null
+        | undefined
     )[]
 ): {
     (node: Value): void;
