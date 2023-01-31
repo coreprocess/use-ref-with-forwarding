@@ -1,13 +1,22 @@
 {
     "name": "use-ref-with-forwarding",
-    "version": "1.0.3",
-    "description": "useRefWithForwarding hook for React",
+    "version": "1.0.4",
+    "description": "A React hook combining multiple refs into one ref.",
     "main": "dist/index.js",
     "module": "dist/index.js",
     "types": "dist/index.d.ts",
     "repository": "https://github.com/teamrevin/use-ref-with-forwarding",
     "author": "Niklas Salmoukas",
     "license": "MIT",
+    "keywords": [
+        "react",
+        "hook",
+        "react-hook",
+        "ref",
+        "forwarding",
+        "useRefWithForwarding",
+        "useRef"
+    ],
     "private": false,
     "scripts": {
         "build": "tsc"

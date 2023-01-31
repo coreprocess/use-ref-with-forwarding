@@ -62,8 +62,4 @@ This library is licensed under the MIT license.
 
 ## Contributing
 
-We welcome contributions to the use-ref-with-forwarding library. To contribute, simply open a [pull request](https://github.com/teamrevin/use-ref-with-forwarding/pulls) with your changes.
-
-## Support
-
-For issues or support, please open an issue on [GitHub](https://github.com/teamrevin/use-ref-with-forwarding/issues).
+We welcome contributions to the `use-ref-with-forwarding` library. To contribute, simply open a [pull request](https://github.com/teamrevin/use-ref-with-forwarding/pulls) with your changes.
